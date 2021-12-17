@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(69, 69, 69);
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-family: 'Carter One', cursive;
+}
+
+.App {
+    padding: 12px;
+    background-color: rgb(216, 196, 80);
+    max-width: 860px;
+    margin: 20px auto;
+    color: rgb(57, 57, 57);
+    border-radius: 12px;
+}
+
+.App .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.App .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App button {
+    font-size: 1.1em;
+    background-color:white;
+    border: 4px solid lightseagreen;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.App button:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.Card {
+    background-color: lightseagreen;
+    border:4px solid rgb(153, 220, 216);
+    padding: 8px;
+    color: white;
+    font-size: 1.1em;
+    min-height: 240px;
+    border-radius: 16px;
+    opacity: 0;
+    transform: translateY(10px);
+    cursor: pointer;
+    /* mouse hover effect */
+    transition: all 0.3s ease-in-out;
+    /* fade in bij start */
+    animation: fadein forwards 0.4s ease-out;
+}
+
+.Card:hover {
+    background-color: rgb(96, 216, 210);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
