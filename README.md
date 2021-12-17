@@ -18,6 +18,7 @@ https://kokodoko.github.io/react-pokedex/
 
 - page height jumps around
 - clickable cards, likes, add to collection
+- CSS modules / styled components
 
 ## Links
 
