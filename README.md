@@ -1,6 +1,6 @@
 # react-pokedex
 
-- Building a pokédex in React with Hooks
+- Building a pokédex in React with Hooks and CSS Grid
 - Use Parcel to compile the project to the docs folder
 
 ## Develop
@@ -11,6 +11,8 @@ npm run start
 ```
 
 ## Live
+
+https://kokodoko.github.io/react-pokedex/
 
 ## Todo
 
